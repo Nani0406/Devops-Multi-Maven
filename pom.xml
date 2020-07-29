@@ -59,10 +59,6 @@
     </repositories>
     
     <distributionManagement>
-      <snapshotRepository>
-        <id>nexus</id>
-        <url>http://15.206.222.205:8081/nexus/content/repositories/snapshots</url>
-      </snapshotRepository>
       <repository>
 	    <id>nexus</id>
 	    <url>http://15.206.222.205:8081/nexus/content/repositories/releases</url>
