@@ -63,6 +63,10 @@
         <id>nexus</id>
         <url>http://15.206.222.205:8081/nexus/content/repositories/snapshots</url>
       </snapshotRepository>
+      <repository>
+	    <id>nexus</id>
+	    <url>http://15.206.222.205:8081/nexus/content/repositories/releases</url>
+      </repository>
    </distributionManagement>
 
     <build>
@@ -85,7 +89,14 @@
                     </execution>
                 </executions>
             </plugin>
-            
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-release-plugin</artifactId>
+               <version>3.0.0-M1</version>
+               <configuration>
+                  <tagNameFormat>v@{project.version}</tagNameFormat>
+               </configuration>
+            </plugin>
         </plugins>
     </build>
 
