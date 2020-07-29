@@ -49,6 +49,13 @@
             <artifactId>xmlunit-core</artifactId>
             <version>2.5.1</version>
         </dependency>
+	    <!-- https://mvnrepository.com/artifact/external.atlassian.jgitflow/jgitflow-maven-plugin -->
+<dependency>
+    <groupId>external.atlassian.jgitflow</groupId>
+    <artifactId>jgitflow-maven-plugin</artifactId>
+    <version>1.0-m5.1</version>
+</dependency>
+
     </dependencies>
   
     <repositories>
